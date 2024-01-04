@@ -1,5 +1,11 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_preorder - traverse a three by preorder root -> left -> right
+ * @tree: root of the tree
+ * @func: function to print a values
+ */
+
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree == NULL || func == NULL)
